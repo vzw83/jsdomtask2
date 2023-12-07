@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="current-result">
+      <h3>last action</h3>
+      <p id="current-result"></p>
+    </div>
+    <div class="result-list-container">
+      <h3>all actions</h3>
+      <div class="result-list" id="result-list"></div>
+    </div>
+    <div class="experiment-container">
+      <div class="experiment" id="experiment-mouse" tabindex="0"></div>
+      <div class="experiment" id="experiment-keyboard" tabindex="0"></div>
+      <div class="experiment" id="experiment-drag" tabindex="0" draggable="true"></div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

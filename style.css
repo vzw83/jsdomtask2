@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 100px auto;
+  height: calc(100vh - 200px);
+
+  display: grid;
+  grid-template-areas:
+  ". exp"
+  "res exp"
+  "res exp"
+  "res exp";
+  gap: 10px;
+}
+
+.wrapper > div {
+  background-color: white;
+}
+
+.current-result > * {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.result-list-container {
+  grid-area: res;
+}
+
+.result-list-container > * {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.result-list {
+  height: 60vh;
+  overflow: scroll;
+}
+
+.experiment-container {
+  grid-area: exp;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+}
+
+.experiment {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  position: relative;
+}
+
+.experiment:focus {
+  background-color: blue;
+}
+
+#experiment-drag {
+  cursor: move;
+}
+
+.dragged {
+  opacity: 0.3;
+}
